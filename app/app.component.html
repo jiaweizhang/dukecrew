@@ -1,0 +1,27 @@
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" [routerLink]="['/']">Duke Crew</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+    			<li><a [routerLink]="['/']" class="btn">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <!-- Routed views go here -->
+	<router-outlet></router-outlet>
+</div>
+<div class="footer">
+    <div class="container text-center">
+        <p>
+            Footers
+        </p>
+
+        <p>&copy; Duke Crew, 2016. All rights reserved.</p>
+    </div>
+</div>
+</body>
